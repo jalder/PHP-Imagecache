@@ -1,0 +1,5 @@
+#cached images --- caching...
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/images/cached/
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteRule (.*) /imagecache.php?$1 [L]
