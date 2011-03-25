@@ -1,0 +1,9 @@
+PHP-Imagecache is a very simple, but effective, caching scenario. 
+
+In order to use, put images in /images/gallery, when needing a specific size of the image is needed,
+set src="/images/cached/WxH/image.ext" where WxH is the width and height desired. If the image exists, it is served from Apache, if the image does not exist, PHP will exec a ImageMagick convert to resize, then will redirect to the newly created image.
+
+Place imagecache.php in your root and add the contents of .htaccess to your htaccess.
+
+Jack Alder
+jack@jalder.com
